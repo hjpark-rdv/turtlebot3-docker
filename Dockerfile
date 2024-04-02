@@ -1,1 +1,1 @@
-Dockerfile.xavier
+Dockerfile.intel

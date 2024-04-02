@@ -12,7 +12,8 @@ then
 fi
 
 # MODIFY BELOW (NOTE(jwd) - you may need to change the network id `wlp3s0` below)
-export ROS_REMOTE_PC=$(ifconfig wlp3s0 | awk '/inet / {print $2}')
+#export ROS_REMOTE_PC=$(ifconfig wlp3s0 | awk '/inet / {print $2}')
+export ROS_REMOTE_PC=$(hostname)
 export ROS_PORT=11311
 export ROS_MASTER_CONTAINER=turtlebot3-rosmaster
 export TURTLEBOt3_MODEL=waffle_pi
